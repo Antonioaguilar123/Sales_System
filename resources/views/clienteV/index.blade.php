@@ -6,7 +6,8 @@
         <table>
             <tr>
                 <th>Nro </th>
-                <th>Nombre </th>
+                <th>Nombres </th>
+                <th>email </th>
                 <th>Telefono </th>
                 <th>Direccion</th>
             </tr>
@@ -14,8 +15,10 @@
     @forelse ($clientes as $cliente)
         <tr>
             <td>{{ $loop->index + 1 }}</td>
-            <td>{{ $cliente->nombre }}</td>
+            <td>{{ $cliente->nombres }}</td>
             <td>{{ $cliente->email }}</td>
+            <td>{{ $cliente->telefono }}</td>
+            <td>{{ $cliente->direccion }}</td>
             <td>
             <a href="{{ route('cliente.editar', $cliente->slug) }}">Editar</a>
             <a href="{{ route('cliente.ver', $cliente->slug) }}">Ver</a>

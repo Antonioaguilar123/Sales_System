@@ -9,12 +9,16 @@
                 <input type="text" name="nombre" value="{{ old('nombre') }}">
             </div>
             <div>
+                <label for="">EMAIL</label>
+                <input type="email" name="email" value="{{ old('email') }}">
+            </div>
+            <div>
                 <label for="">TELEFONO</label>
-                <input type="telefono" name="telefono" value="{{ old('telefono') }}">
+                <input type="text" name="telefono" value="{{ old('telefono') }}">
             </div>
             <div>
                 <label for="">DIRECCION</label>
-                <input type="direccion" name="direccion" value="{{ old('direccion') }}">
+                <input type="text" name="direccion" value="{{ old('direccion') }}">
             </div>
             <div>
                 <input type="submit" value="Submit">
