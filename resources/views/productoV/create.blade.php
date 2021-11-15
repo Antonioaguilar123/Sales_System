@@ -5,11 +5,11 @@
         <form action="{{ route('cliente.guardar') }}" method="post">
             @csrf
             <div>
-                <label for="">NOMBRES</label>
+                <label for="">NOMBRE :</label>
                 <input type="text" name="nombre" value="{{ old('nombre') }}">
             </div>
             <div>
-                <label for="">TELEFONO</label>
+                <label for="">CATEGORIA :</label>
                 <input type="telefono" name="telefono" value="{{ old('telefono') }}">
             </div>
             <div>
