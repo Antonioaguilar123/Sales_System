@@ -7,5 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class productos extends Model
 {
-    use HasFactory;
+    public function productos(){
+    return $this->hasMany(productos::class);
+    //belongs pertenece
+    }
 }

@@ -7,5 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Cliente extends Model
 {
-    use HasFactory;
+    public function Cliente(){
+        return $this->belonsTo(Cliente::class,'id');
+    }
 }
