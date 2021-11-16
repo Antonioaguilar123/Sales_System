@@ -8,6 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class venta extends Model
 {
     public function venta(){
-        return $this->belonsTo(venta::class,'id');
+        return $this->belonsTo(venta::class, 'id');
     }
+
+      //belongs pertenece
 }

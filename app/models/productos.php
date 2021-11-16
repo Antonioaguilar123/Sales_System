@@ -9,6 +9,6 @@ class productos extends Model
 {
     public function productos(){
     return $this->hasMany(productos::class);
-    //belongs pertenece
+  //tiene muchos
     }
 }

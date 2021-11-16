@@ -7,7 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Cliente extends Model
 {
-    public function Cliente(){
-        return $this->belonsTo(Cliente::class,'id');
+    public function Cliente()
+    {
+        return $this->belonsTo(Cliente::class, 'id');
     }
 }

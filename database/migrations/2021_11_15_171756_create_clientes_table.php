@@ -26,7 +26,7 @@ class CreateClientesTable extends Migration
         });
 
         Schema::table('clientes',function (Blueprint $table){
-            $table->foreign('id_v')->reference('id')->on ('ventas');           
+            $table->foreign('id_v')->references('id')->on('ventas');           
     });
     }
 
