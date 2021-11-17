@@ -1,23 +1,18 @@
 <!DOCTYPE html>
 <html>
+<head>
   <meta charset="UTF-8">
-<style>
+  <style>
   @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=STIX+Two+Math&display=swap');
 body {
-  background-image: url(FondoMatricula.jpg);
+  background-image: url();
   
 }
 button, select {
   text-transform: none;
 }
-button, input, select {
+button{
   font: inherit;
-}
-#Principal {
-  border: solid 5px #000000;
-  width: 800px;
-  margin:  auto;
-  position: relative;
 }
 #Formulario {
   padding: 37.5px;
@@ -51,19 +46,11 @@ input, select{
   text-transform: uppercase;
 	width: 100%;
 }
-.CInstitucional {
-	float: none;
-	width: 100%;
-}
-.CicloI {
-	float: none;
-	width: 100%;
-}
 select {
   -webkit-appearance: none;
 }
 
-#BotonRegistrar , #BotonActualizar , #BotonOrdenar {
+#BTN1  {
   background: none;
   border: solid 2px #000000;
   color: #000000;
@@ -77,28 +64,20 @@ select {
   
 }
 
-#BotonRegistrar:hover,#BotonActualizar:hover , #BotonOrdenar:hover {
+#BTN1:hover {
   background: #000000;
   color: #ffffff;
 }
-td{
-    border: 1px black solid;
-}
-th{
-    border: 1px black solid;
-}
-.span {
-        font-size: 0;
-        display: block;
-    }
+
 </style>
-<body>
+</head>
+<body class="body">
 @extends('layouts.app')
 @section('content')
 
     <div class="container">
         <h1>CREAR NUEVO CLIENTE</h1>
-        <form action="{{ route('cliente.guardar') }}" method="post">
+        <form action="{{ route('cliente.guardar') }}" method="post" class="Formulario">
             @csrf
             <div>
                 <label for="">NOMBRES</label>
@@ -117,10 +96,11 @@ th{
                 <input type="text" name="direccion" value="{{ old('direccion') }}">
             </div>
             <div>
-                <input type="submit" value="Submit">
+                <input type="submit" class="BTN1" value="Submit">
             </div>
     </div>
     </form>
     </body>
 
     @endsection
+</html>
