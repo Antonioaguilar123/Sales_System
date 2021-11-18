@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return redirect('/cliente/list');
+    return redirect('/cliente/listar');
     });
     Route::get('/cliente', 'App\Http\Controllers\TestController@crearCliente')->name('cliente.agregar');
     Route::post('/cliente', 'App\Http\Controllers\TestController@registrarCliente')->name('cliente.guardar');
