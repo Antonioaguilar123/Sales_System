@@ -39,6 +39,11 @@ class TestController extends Controller
         $clientes = cliente::toBase()->get();
         return view('clienteV.index', compact('clientes'));
     }
+    public function listarClientes3()
+    {
+        $cli = cliente::toBase()->get();
+        return view('clienteV.index', compact('cli'));
+    }
     public function formularioEditarCliente(cliente $cliente)
     {
         echo "Formulario De Edicion";
