@@ -74,7 +74,7 @@ select {
 <body class="body">
 @extends('layouts.app')
 @section('content')
-
+hola
     <div class="container">
         <h1>CREAR NUEVO CLIENTE</h1>
         <form action="{{ route('cliente.guardar') }}" method="post" class="Formulario">
