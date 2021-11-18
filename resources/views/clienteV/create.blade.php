@@ -1,3 +1,5 @@
+@extends('clienteV.index')
+@section('content')
 <!DOCTYPE html>
 <html>
 <head>
@@ -72,8 +74,7 @@ select {
 </style>
 </head>
 <body class="body">
-@extends('layouts.app')
-@section('content')
+
 
     <div class="container">
         <h1>CREAR NUEVO CLIENTE</h1>
@@ -101,6 +102,5 @@ select {
     </div>
     </form>
     </body>
-
-    @endsection
 </html>
+@endsection
